@@ -1,63 +1,26 @@
 html, body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: black;
- }
- #cabecalho{
-   background:url("imgs/neym.jpg");
-   color: MediumBLue;
- }
- h1{
-   margin-top: 0;
-   padding-top: 20px;
-   margin-left: 34px;
-   font-size: 36px;
-   font-family: 'Dancing Script', cursive;
- }
- h2{
-   margin-left: 34px;
-   margin-bottom: 0;
-   padding-bottom: 13px;
-   font-size: 26px;
-   font-family: 'Dancing Script', cursive;
- }
- h3{
-   font-size: 22px;
-   margin-left: 34px;
-   font-family: 'Pacifico', cursive;
-   color: SlateGray;
- }
- #principal{
-   margin-top: 20px;
-   margin-left: 34px;
-   float: left;
-   font-size: 18px;
-   display: inline-block;
-   border-radius: 20px;
-   background-color: Aquamarine;
-   width: 370px;
-   margin-right: 60px;
-   text-align: center;
- }
- #two{
-   margin-top: 20px;
-   margin-right: 34px;
-   float: right;
-   font-size: 18px;
-   display: inline-block;
-   border-radius: 20px;
-   background-color: Aquamarine;
-   width: 370px;
-   text-align: center;
- }
- #three{
-   margin-top: 20px;
-   font-size: 18px;
-   display: inline-block;
-   border-radius: 20px;
-   background-color: Aquamarine;
-   width: 370px;
-   text-align: center;
- }
- 
+  margin: 0px;
+}
+header{
+  background-color: #54FF9F;
+  color: #FF69B4;
+  text-align: center;
+}
+h1{
+  font-family: 'Kaushan Script', cursive;
+  margin: 0;
+  padding-top: 12px;
+  padding-left: 10px;
+  font-size: 34px;
+}
+h2{
+  font-family: 'Times New Roman';
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 14px;
+  font-size: 24px;
+}
+li{
+  display: inline;
+  margin-right: 12px;
+}
