@@ -20,16 +20,15 @@ h2{
   padding-bottom: 14px;
   font-size: 24px;
 }
-header ul{
+li{
   padding-left: 0;
   padding-top: 0.25em;
   margin-bottom: 0;
-  background-color: rgb(black blue white);
+  background-color: rgb(black);
 }
 header li{
   display: inline-block;
   margin-right: 12px;
   font-family:'Kaushan Script', cursive;
-  border-bottom: 3px solid black;
   margin: 0 1em;
 }
