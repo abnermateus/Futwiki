@@ -40,7 +40,6 @@ header ul {
 
 header li {
   display: inline-block;
-  border-radius: 20%;
   font-family: "Kaushan Script", serif;
   margin: 0 1em;
 }
