@@ -1,10 +1,10 @@
 html, body{
   margin: 0px;
+  min-height: 100%; 
 }
 
 header{
-  background-color: black;
-  color: white;
+  background-image: linear-gradient(45deg, black, green, black, green);
   text-align: center;
   margin-top: 0px;
   margin: 0px;
@@ -15,15 +15,19 @@ h1{
   margin: 0;
   padding-top: 12px;
   padding-left: 10px;
-  font-size: 35px;
+  font-size: 40px;
+}
+
+h1, h2, strong{
+  color: white;
 }
 
 h2{
-  font-family: 'Kaushan Script', cursive, serif;
+  font-family:'Times New Roman';
   margin: 0;
   padding-left: 10px;
   padding-bottom: 14px;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 header ul {
@@ -38,7 +42,6 @@ header li {
   display: inline-block;
   font-family: "Kaushan Script", serif;
   margin: 0 1em;
-  border: 1px solid;
 }
 
 a {
