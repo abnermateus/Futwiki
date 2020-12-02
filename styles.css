@@ -3,8 +3,8 @@ html, body{
 }
 
 header{
-  background-color: #54FF9F;
-  color: #FF69B4;
+  background-color: black;
+  color: white;
   text-align: center;
   margin-top: 0px;
   margin: 0px;
@@ -27,7 +27,7 @@ h2{
 }
 
 header ul {
-  background-color: #FF69B4;
+  background-color: white;
   padding-left: 0;
   padding-top: 0.25em;
   margin-bottom: 0;
@@ -46,7 +46,9 @@ a {
 }
 
 body{
-  background-image: url(Images/estadio.jpg);
+  background-image: url(Images/gramado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
