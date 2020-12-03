@@ -1,6 +1,5 @@
 html, body{
   margin: 0px;
-  min-height: 100%; 
 }
 
 header{
@@ -44,12 +43,35 @@ header li {
   margin: 0 1em;
 }
 
+#recipiente{
+  display: grid;
+  grid-template-rows: auto 154px 1fr;
+  grid-template-columns: 154px auto 154px;
+}
+#cabecalho{
+  grid-row: 2/3;
+  grid-column: 1/1;
+}
+#lateral{
+  grid-row: 2/3;
+  grid-column: 1/4
+}
 a {
   color: black;
 }
 
-body{
-  background-image: url(Images/gramado.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+#tags {
+  float: right;
+  width: 300px;
+  background: black;
+  padding: 1em;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  top: 0px;
+  position: sticky;
 }
+
+#tags h1 {
+  margin-bottom: 1em;
+}
+
