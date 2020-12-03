@@ -15,7 +15,7 @@ h1{
   margin: 0;
   padding-top: 12px;
   padding-left: 10px;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 h1, h2, strong{
@@ -27,7 +27,7 @@ h2{
   margin: 0;
   padding-left: 10px;
   padding-bottom: 14px;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 header ul {
@@ -53,73 +53,3 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-#Tags{
-  position: absolute;
-  background-color: black;
-  top: 50%;
-  margin-top: -25px;
-  right: -120px;
-  transition: right 150ms ease-out;
-  width: 250px;
-  padding: 1em;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.Futags{
-  margin-top: 0px;
-  margin-bottom: 25px;
-}
-
-#Tags:hover {
-  right: 0px;
-}
-.Regras,
-.Modalidades,
-.Historia,
-.Brasileiro {
-  display: inline-block;
-  border-radius: 2px;
-  padding: 2px 4px;
-  margin: 2px;
-  background-color: green;
-  color: goldenrod;
-  text-shadow: 1px 1px black;
-  position: relative;
-}
-
-.Regras {
-  font-size: 125%;
-}
-
-.Historia {
-  font-size: 150%;
-}
-
-.Regras:active{
-  top: 2px; left: 2px; 
-  cursor: pointer;
-}
-
-.Regras:active{
-  top: 2px; left: 2px; 
-  cursor: pointer;
-}
-
-.Historia:active{
-  top: 2px; left: 2px; 
-  cursor: pointer;
-}
-
-.Brasileiro:active{
-  top: 2px; left: 2px; 
-  cursor: pointer;
-}
-
-
-
-
-
-
-
