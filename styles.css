@@ -43,35 +43,87 @@ header li {
   margin: 0 1em;
 }
 
-#recipiente{
-  display: grid;
-  grid-template-rows: auto 154px 1fr;
-  grid-template-columns: 154px auto 154px;
-}
-#cabecalho{
-  grid-row: 2/3;
-  grid-column: 1/1;
-}
-#lateral{
-  grid-row: 2/3;
-  grid-column: 1/4
-}
-a {
+#navegacao {
   color: black;
 }
 
 #tags {
+  position: fixed;
   float: right;
-  width: 300px;
   background: black;
-  padding: 1em;
-  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
   text-align: center;
-  top: 0px;
-  position: sticky;
+  width: 300px;
+  top: 50%;
+  margin-top: -25px;
+  padding-bottom: 25px;
+  right: -200px;
+  transition: left 25ms ease-out;
+}
+
+#tags:hover{
+  right: 0;
 }
 
 #tags h1 {
   margin-bottom: 1em;
+  color: goldenrod;
+  font-size: 28px;
 }
 
+.historia,
+.regras,
+.modalidades,
+.brasileirao {
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 2px 4px;
+  margin-top: 8px;
+  background-image: linear-gradient(rgb(18, 194, 18), rgb(0, 0, 0));
+  color: goldenrod;
+  text-shadow: 1px 1px black;
+  position: relative;
+}
+
+.regras {
+  font-size: 125%;
+}
+
+.historia {
+  font-size: 150%;
+}
+
+.historia:active{
+  bottom: 2px; left: 2px; 
+  cursor: pointer;
+}
+
+.regras:active{
+  bottom: 2px; left: 2px; 
+  cursor: pointer;
+}
+
+.modalidades:active{
+   bottom: 2px; left: 2px;
+  cursor: pointer;
+}
+
+.brasileirao:active{
+  top: 2px; left: 2px;
+  cursor: pointer;
+}
+
+body{
+  background-image: url(Images/gramado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+button{
+  background-color: red;
+  height: 60px;
+  width: 60px;
+  border-radius: 40px 40px 40px 40px;
+  position: relative;
+  top: 200px;
+}
