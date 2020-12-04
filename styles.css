@@ -120,32 +120,6 @@ body{
   background-repeat: no-repeat;
 }
 
-#pagina{
-  display: block;
-  margin-top: 50px;
-  margin-right: 250px;
-  margin-left: 250px;
-  padding: 25px;
-  background-color: rgb(241, 241, 193);
-}
-
-.correndo{
-
-  color: rgb(233, 27, 113);
-  margin-right: 20px;
-  border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border: 1px solid black;
-  height: 50px; 
-}
-
-.maior{
-  color: black;
-}
-
 #name{
   font-size: 36px;
   margin-left: 10px;
