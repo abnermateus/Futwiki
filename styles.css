@@ -22,6 +22,7 @@ h1,
 h2,
 strong {
     color: white;
+    text-shadow: 1px 1px goldenrod;
 }
 
 h2 {
@@ -122,31 +123,61 @@ header li {
 }
 
 #central {
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 100px;
+    margin-right: 220px;
     margin-top: 45px;
     padding-top: 3px;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #welcome {
-    background-image: linear-gradient(rgb(233, 233, 197), rgb(0, 0, 0));
+    background-color: rgb(235, 235, 197);
     margin-left: 100px;
+    border-radius: 25px;
     margin-right: 100px;
     padding: 20px;
 }
 
 .bem-vindo {
     font-size: 35px;
-    color: rgb(13, 78, 13);
+    color: green;
+    text-shadow: 1px 1px black;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-bottom: 20px;
 }
 
-.pessoas {
-    color: white;
+.site {
+    background-image: url(Images/bola.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px white;
+    font-size: 32px;
+    padding: 20px;
+    font-family: 'Times New Roman';
+    border-radius: 20px;
+    text-align: center;
+}
+
+.site strong {
+    color: gold;
+}
+
+.info {
+    font-size: 25px;
+    font-family: Verdana, serif;
+    text-shadow: 1px 1px green;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info strong {
+    color: black;
+}
+
+#videos {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 body {
@@ -185,17 +216,31 @@ img {
 }
 
 #descri {
-    font-size: 24px;
+    font-size: 32px;
     text-align: center;
     color: gold;
     padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: gold;
 }
 
 button {
-    background-color: red;
+    background-image: url(Images/icon.ico);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 60px;
     width: 60px;
     border-radius: 40px 40px 40px 40px;
     position: relative;
     top: 200px;
+}
+
+#entra {
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: gold;
+    padding-top: 30px;
 }
