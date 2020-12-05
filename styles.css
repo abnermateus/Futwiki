@@ -1,166 +1,201 @@
-html, body{
-  margin: 0px;
+html,
+body {
+    margin: 0px;
 }
 
-header{
-  background-color: black;
-  text-align: center;
-  margin-top: 0px;
-  margin: 0px;
+header {
+    background-color: black;
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px;
 }
 
-h1{
-  font-family: 'Kaushan Script', cursive;
-  margin: 0;
-  padding-top: 12px;
-  padding-left: 10px;
-  font-size: 50px;
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 10px;
+    font-size: 50px;
 }
 
-h1, h2, strong{
-  color: white;
+h1,
+h2,
+strong {
+    color: white;
 }
 
-h2{
-  font-family:'Times New Roman';
-  margin: 0;
-  padding-left: 10px;
-  padding-bottom: 14px;
-  font-size: 32px;
+h2 {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 14px;
+    font-size: 32px;
 }
 
 header ul {
-  background-color: white;
-  padding-left: 0;
-  padding-top: 0.25em;
-  margin-bottom: 0;
-  font-size: 25px;
+    background-color: white;
+    padding-left: 0;
+    padding-top: 0.25em;
+    margin-bottom: 0;
+    font-size: 25px;
 }
 
 header li {
-  display: inline-block;
-  font-family: "Kaushan Script", serif;
-  margin: 0 1em;
+    display: inline-block;
+    font-family: "Kaushan Script", serif;
+    margin: 0 1em;
 }
 
 #navegacao {
-  color: black;
+    color: black;
 }
 
 #tags {
-  position: fixed;
-  float: right;
-  background: black;
-  border-radius: 20px;
-  text-align: center;
-  width: 300px;
-  top: 50%;
-  margin-top: -25px;
-  padding-bottom: 25px;
-  right: -200px;
-  transition: left 25ms ease-out;
+    position: fixed;
+    float: right;
+    background: black;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    top: 50%;
+    margin-top: -25px;
+    padding-bottom: 25px;
+    right: -200px;
+    transition: left 25ms ease-out;
 }
 
-#tags:hover{
-  right: 0;
+#tags:hover {
+    right: 0;
 }
 
 #tags h1 {
-  margin-bottom: 1em;
-  color: goldenrod;
-  font-size: 28px;
+    margin-bottom: 1em;
+    color: goldenrod;
+    font-size: 28px;
 }
 
 .historia,
 .regras,
 .modalidades,
 .brasileirao {
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 2px 4px;
-  margin-top: 8px;
-  background-image: linear-gradient(rgb(18, 194, 18), rgb(0, 0, 0));
-  color: goldenrod;
-  text-shadow: 1px 1px black;
-  position: relative;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 2px 4px;
+    margin-top: 8px;
+    background-image: linear-gradient(rgb(18, 194, 18), rgb(0, 0, 0));
+    color: goldenrod;
+    text-shadow: 1px 1px black;
+    position: relative;
 }
 
 .regras {
-  font-size: 125%;
+    font-size: 125%;
 }
 
 .historia {
-  font-size: 150%;
+    font-size: 150%;
 }
 
-.historia:active{
-  bottom: 2px; left: 2px; 
-  cursor: pointer;
+.historia:active {
+    bottom: 2px;
+    left: 2px;
+    cursor: pointer;
 }
 
-.regras:active{
-  bottom: 2px; left: 2px; 
-  cursor: pointer;
+.regras:active {
+    bottom: 2px;
+    left: 2px;
+    cursor: pointer;
 }
 
-.modalidades:active{
-  bottom: 2px; left: 2px;
-  cursor: pointer;
+.modalidades:active {
+    bottom: 2px;
+    left: 2px;
+    cursor: pointer;
 }
 
-.brasileirao:active{
-  top: 2px; left: 2px;
-  cursor: pointer;
+.brasileirao:active {
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
 }
 
-body{
-  background-image: url(Images/gramado.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+#central {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 45px;
+    padding-top: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#name{
-  font-size: 36px;
-  margin-left: 10px;
-  text-align: center;
-  font-family: 'Kaushan Script', cursive;
-  margin: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: gold;
+#welcome {
+    background-image: linear-gradient(rgb(233, 233, 197), rgb(0, 0, 0));
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
 }
 
-#foto > img{
-  height: 388px;
-  width: 300px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 39%;
-  margin-right: 50%;
+.bem-vindo {
+    font-size: 35px;
+    color: rgb(13, 78, 13);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-p{
-  margin: 0;
-  display: block;
+.pessoas {
+    color: white;
 }
 
-img{
-  margin: 0;
+body {
+    background-image: url(Images/gramado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#descri{
-  font-size: 24px;
-  text-align: center;
-  color: gold;
-  padding-top: 30px;
+#name {
+    font-size: 36px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gold;
 }
 
-button{
-  background-color: red;
-  height: 60px;
-  width: 60px;
-  border-radius: 40px 40px 40px 40px;
-  position: relative;
-  top: 200px;
+#foto>img {
+    height: 388px;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 39%;
+    margin-right: 50%;
+}
+
+p {
+    margin: 0;
+    display: block;
+}
+
+img {
+    margin: 0;
+}
+
+#descri {
+    font-size: 24px;
+    text-align: center;
+    color: gold;
+    padding-top: 30px;
+}
+
+button {
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px 40px 40px 40px;
+    position: relative;
+    top: 200px;
 }
