@@ -4,6 +4,7 @@ let seta = document.querySelector('#seta');
 let posicao = 0;
 let imagens = ['Images/endo.jpeg', 'Images/fubuki.jpeg', 'Images/ichinose.jpeg', 'Images/someoka.jpeg'];
 let foto = document.querySelector('#foto');
+let cria = document.querySelector('.cria');
 let descri = document.querySelector('#descri');
 name.innerHTML = "<p>" + nomes[0] + "</p>";
 foto.innerHTML = "<img src=" + imagens[0] + ">";
