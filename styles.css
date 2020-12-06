@@ -192,10 +192,10 @@ body {
     margin-left: 10px;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
-    margin: 0;
     margin-top: 0;
-    margin-bottom: 0;
-    color: rgb(16, 62, 80);
+    margin-bottom: 20px;
+    color: rgb(14, 102, 48);
+    text-shadow: 1px 1px black;
 }
 
 #foto>img {
@@ -222,16 +222,17 @@ img {
 #descri {
     display: flex;
     position: relative;
-    padding-right: 10px;
+    padding: 20px;
+    border-radius: 20px;
     left: 50px;
     right: 20px;
-    height: 388px;
-    width: 300px;
+    width: 500px;
     background-color: rgb(235, 235, 197);
-    margin-bottom: 210px;
-    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-top: 60px;
     font-size: 32px;
-    color: black;
+    color: green;
+    text-shadow: 1px 1px goldenrod;
     text-align: center;
 }
 
@@ -240,6 +241,7 @@ button {
     width: 60px;
     border-radius: 40px 40px 40px 40px;
     position: relative;
+    left: 20px;
     top: 200px;
 }
 
@@ -255,12 +257,19 @@ button {
     background-repeat: no-repeat;
 }
 
+#criadores {
+    background-image: url(Images/Ronaldinho.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #entra {
     font-size: 32px;
     margin: 0;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
-    color: rgb(0, 0, 0);
+    color: gold;
+    text-shadow: 1px 1px black;
     padding-top: 30px;
 }
 
@@ -298,12 +307,12 @@ footer {
     color: gold;
 }
 
-#referencias h1 strong {
+#referencias strong {
     font-family: 'Kaushan Script', cursive;
-    text-align: center;
     font-size: 35px;
+    margin-left: 50px;
     color: green;
-    text-shadow: 2px 2px gray;
+    text-shadow: 2px 2px black;
 }
 
 #picture>img {
@@ -321,7 +330,7 @@ footer {
 #agente {
     display: flex;
     position: relative;
-    padding-right: 10px;
+    padding: 20px;
     border-radius: 20px;
     left: 50px;
     right: 20px;
