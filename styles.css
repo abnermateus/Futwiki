@@ -1,246 +1,281 @@
-html,
-body {
-    margin: 0px;
-}
-
-header {
-    background-color: black;
-    text-align: center;
-    margin-top: 0px;
-    margin: 0px;
-}
-
-h1 {
-    font-family: 'Kaushan Script', cursive;
-    margin: 0;
-    padding-top: 12px;
-    padding-left: 10px;
-    font-size: 50px;
-}
-
-h1,
-h2,
-strong {
-    color: white;
-    text-shadow: 1px 1px goldenrod;
-}
-
-h2 {
-    font-family: 'Times New Roman';
-    margin: 0;
-    padding-left: 10px;
-    padding-bottom: 14px;
-    font-size: 32px;
-}
-
-header ul {
-    background-color: white;
-    padding-left: 0;
-    padding-top: 0.25em;
-    margin-bottom: 0;
-    font-size: 25px;
-}
-
-header li {
-    display: inline-block;
-    font-family: "Kaushan Script", serif;
-    margin: 0 1em;
-}
-
-#navegacao {
-    color: black;
-}
-
-#tags {
-    position: fixed;
-    float: right;
-    background: black;
-    border-radius: 20px;
-    text-align: center;
-    width: 300px;
-    top: 50%;
-    margin-top: -25px;
-    padding-bottom: 25px;
-    right: -200px;
-    transition: left 25ms ease-out;
-}
-
-#tags:hover {
-    right: 0;
-}
-
-#tags h1 {
-    margin-bottom: 1em;
-    color: goldenrod;
-    font-size: 28px;
-}
-
-.historia,
-.regras,
-.modalidades,
-.brasileirao {
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 2px 4px;
-    margin-top: 8px;
-    background-image: linear-gradient(rgb(18, 194, 18), rgb(0, 0, 0));
-    color: goldenrod;
-    text-shadow: 1px 1px black;
-    position: relative;
-}
-
-.regras {
-    font-size: 125%;
-}
-
-.historia {
-    font-size: 150%;
-}
-
-.historia:active {
-    bottom: 2px;
-    left: 2px;
-    cursor: pointer;
-}
-
-.regras:active {
-    bottom: 2px;
-    left: 2px;
-    cursor: pointer;
-}
-
-.modalidades:active {
-    bottom: 2px;
-    left: 2px;
-    cursor: pointer;
-}
-
-.brasileirao:active {
-    top: 2px;
-    left: 2px;
-    cursor: pointer;
-}
-
-#central {
-    margin-left: 100px;
-    margin-right: 220px;
-    margin-top: 45px;
-    padding-top: 3px;
-}
-
-#welcome {
-    background-color: rgb(235, 235, 197);
-    margin-left: 100px;
-    border-radius: 25px;
-    margin-right: 100px;
-    padding: 20px;
-}
-
-.bem-vindo {
-    font-size: 35px;
-    color: green;
-    text-shadow: 1px 1px black;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-
-.site {
-    background-image: url(Images/bola.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-shadow: 1px 1px white;
-    font-size: 32px;
-    padding: 20px;
-    font-family: 'Times New Roman';
-    border-radius: 20px;
-    text-align: center;
-}
-
-.site strong {
-    color: gold;
-}
-
-.info {
-    font-size: 25px;
-    font-family: Verdana, serif;
-    text-shadow: 1px 1px green;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.info strong {
-    color: black;
-}
-
-#videos {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-body {
-    background-image: url(Images/gramado.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#name {
-    font-size: 36px;
-    margin-left: 10px;
-    text-align: center;
-    font-family: 'Kaushan Script', cursive;
-    margin: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: gold;
-}
-
-#foto>img {
-    height: 388px;
-    width: 300px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 39%;
-    margin-right: 50%;
-}
-
-p {
-    margin: 0;
-    display: block;
-}
-
-img {
-    margin: 0;
-}
-
-#descri {
-    font-size: 32px;
-    text-align: center;
-    color: gold;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: gold;
-}
-
-button {
-    background-image: url(Images/icon.ico);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 60px;
-    width: 60px;
-    border-radius: 40px 40px 40px 40px;
-    position: relative;
-    top: 200px;
-}
-
-#entra {
-    font-size: 32px;
-    margin: 0;
-    text-align: center;
-    font-family: 'Kaushan Script', cursive;
-    color: gold;
-    padding-top: 30px;
-}
+    html,
+    body {
+        margin: 0px;
+    }
+    
+    header {
+        background-color: black;
+        text-align: center;
+        margin-top: 0px;
+        margin: 0px;
+    }
+    
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        margin: 0;
+        padding-top: 12px;
+        padding-left: 10px;
+        font-size: 50px;
+    }
+    
+    h1,
+    h2,
+    strong {
+        color: white;
+        text-shadow: 1px 1px goldenrod;
+    }
+    
+    h2 {
+        font-family: 'Times New Roman';
+        margin: 0;
+        padding-left: 10px;
+        padding-bottom: 14px;
+        font-size: 32px;
+    }
+    
+    header ul {
+        background-color: white;
+        padding-left: 0;
+        padding-top: 0.25em;
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+    
+    header li {
+        display: inline-block;
+        font-family: "Kaushan Script", serif;
+        margin: 0 1em;
+    }
+    
+    #navegacao {
+        color: black;
+    }
+    
+    #tags {
+        position: fixed;
+        float: right;
+        background: black;
+        border-radius: 20px;
+        text-align: center;
+        width: 300px;
+        top: 50%;
+        margin-top: -25px;
+        padding-bottom: 25px;
+        right: -200px;
+        transition: left 25ms ease-out;
+    }
+    
+    #tags:hover {
+        right: 0;
+    }
+    
+    #tags h1 {
+        margin-bottom: 1em;
+        color: goldenrod;
+        font-size: 28px;
+    }
+    
+    .historia,
+    .regras,
+    .modalidades,
+    .brasileirao {
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 2px 4px;
+        margin-top: 8px;
+        background-image: linear-gradient(rgb(18, 194, 18), rgb(0, 0, 0));
+        color: goldenrod;
+        text-shadow: 1px 1px black;
+        position: relative;
+    }
+    
+    .regras {
+        font-size: 125%;
+    }
+    
+    .historia {
+        font-size: 150%;
+    }
+    
+    .historia:active {
+        bottom: 2px;
+        left: 2px;
+        cursor: pointer;
+    }
+    
+    .regras:active {
+        bottom: 2px;
+        left: 2px;
+        cursor: pointer;
+    }
+    
+    .modalidades:active {
+        bottom: 2px;
+        left: 2px;
+        cursor: pointer;
+    }
+    
+    .brasileirao:active {
+        top: 2px;
+        left: 2px;
+        cursor: pointer;
+    }
+    
+    #central {
+        margin-left: 100px;
+        margin-right: 220px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        padding-top: 3px;
+    }
+    
+    #welcome {
+        background-color: rgb(235, 235, 197);
+        margin-left: 100px;
+        border-radius: 25px;
+        margin-right: 100px;
+        padding: 20px;
+    }
+    
+    .bem-vindo {
+        font-size: 35px;
+        color: green;
+        text-shadow: 1px 1px black;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+    
+    .site {
+        background-image: url(Images/bola.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-shadow: 1px 1px white;
+        font-size: 32px;
+        padding: 20px;
+        font-family: 'Times New Roman';
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+    .site strong {
+        color: gold;
+    }
+    
+    .info {
+        font-size: 25px;
+        font-family: Verdana, serif;
+        text-shadow: 1px 1px green;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .info strong {
+        color: black;
+    }
+    
+    #videos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    body {
+        background-image: url(Images/gramado.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #name {
+        font-size: 36px;
+        margin-left: 10px;
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: gold;
+    }
+    
+    #foto>img {
+        height: 388px;
+        width: 300px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 39%;
+        margin-right: 50%;
+    }
+    
+    p {
+        margin: 0;
+        display: block;
+    }
+    
+    img {
+        margin: 0;
+    }
+    
+    #descri {
+        font-size: 32px;
+        text-align: center;
+        color: gold;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        text-align: center;
+        color: gold;
+    }
+    
+    button {
+        background-image: url(Images/icon.ico);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60px;
+        width: 60px;
+        border-radius: 40px 40px 40px 40px;
+        position: relative;
+        top: 200px;
+    }
+    
+    #entra {
+        font-size: 32px;
+        margin: 0;
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        color: gold;
+        padding-top: 30px;
+    }
+    
+    #voltar-cabecalho {
+        background-color: gold;
+        color: green;
+        text-shadow: 1px 1px black;
+        border-radius: 100%;
+        border: 2px solid silver;
+        font-size: 35px;
+        width: 1em;
+        height: 1em;
+        line-height: 1em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        position: fixed;
+        left: 15px;
+        bottom: 200px;
+    }
+    
+    footer {
+        background-image: url(Images/bolas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100px;
+        padding: 1em;
+    }
+    
+    .texto-rodape {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size: 35px;
+        text-shadow: 1px 1px black;
+        color: green;
+    }
