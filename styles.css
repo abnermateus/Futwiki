@@ -195,16 +195,19 @@ body {
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
-    color: gold;
+    color: rgb(16, 62, 80);
 }
 
 #foto>img {
-    height: 388px;
+    display: flex;
+    float: left;
+    height: 300px;
     width: 300px;
     margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 39%;
-    margin-right: 50%;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    border-radius: 100%;
+    margin-right: 0;
 }
 
 p {
@@ -217,13 +220,19 @@ img {
 }
 
 #descri {
+    display: flex;
+    position: relative;
+    padding-right: 10px;
+    left: 50px;
+    right: 20px;
+    height: 388px;
+    width: 300px;
+    background-color: rgb(235, 235, 197);
+    margin-bottom: 210px;
+    margin-top: 50px;
     font-size: 32px;
+    color: black;
     text-align: center;
-    color: gold;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: gold;
 }
 
 button {
@@ -251,7 +260,7 @@ button {
     margin: 0;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
-    color: gold;
+    color: rgb(0, 0, 0);
     padding-top: 30px;
 }
 
@@ -289,7 +298,7 @@ footer {
     color: gold;
 }
 
-#referencias h1 {
+#referencias h1 strong {
     font-family: 'Kaushan Script', cursive;
     text-align: center;
     font-size: 35px;
@@ -297,6 +306,45 @@ footer {
     text-shadow: 2px 2px gray;
 }
 
-.cria {
-    border-radius: 40px 40px 40px 40px;
+#picture>img {
+    display: flex;
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    border-radius: 100%;
+    margin-right: 0;
+}
+
+#agente {
+    display: flex;
+    position: relative;
+    padding-right: 10px;
+    border-radius: 20px;
+    left: 50px;
+    right: 20px;
+    width: 300px;
+    background-color: rgb(235, 235, 197);
+    margin-bottom: 210px;
+    margin-top: 50px;
+    font-size: 32px;
+    color: green;
+    text-align: center;
+}
+
+#entrac {
+    background-image: url(Images/bola.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px white;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: gold;
 }
