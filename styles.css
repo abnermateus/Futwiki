@@ -307,12 +307,32 @@ footer {
     color: gold;
 }
 
+#ref2 strong {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35px;
+    margin-left: 0px;
+    text-shadow: 2px 2px green;
+    color: black;
+}
+
 #referencias strong {
     font-family: 'Kaushan Script', cursive;
     font-size: 35px;
-    margin-left: 50px;
+    margin-left: 550px;
+    margin-right: 550px;
     color: green;
     text-shadow: 2px 2px black;
+}
+
+#caixa-links {
+    display: block;
+    background-color: rgb(235, 235, 197);
+    width: 600px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 250px;
+    border-radius: 20px;
 }
 
 #picture>img {
