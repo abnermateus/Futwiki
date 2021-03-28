@@ -407,3 +407,8 @@ body {
 #submit:hover {
     background-color: #3a8;
 }
+
+#bola {
+    height: 40px;
+    position: absolute;
+}
