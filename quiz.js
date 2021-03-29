@@ -11,91 +11,57 @@ const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
-
-let questions = [
+let questions = [{
+        question: "Qual foi o time que mais ganhou títulos da Copa do Mundo?",
+        choiceA: "Alemanha",
+        choiceB: "Espanha",
+        choiceC: "Inglaterra",
+        choiceD: "Brasil",
+        choiceE: "Argentina",
+        correct: "D"
+    },
 
     {
-
-        question: "Qual foi o time que mais ganhou títulos da copa do mundo?",
-
-        choiceA: "Alemanha",
-
-        choiceB: "Espanha",
-
-        choiceC: "Inglaterra",
-
-        choiceD: "Brasil",
-
-        choiceE: "Argentina",
-
-        correct: "D"
-
-    }, {
-
-        question: "Qual jogador possui mais bolas de ouro?",
-
+        question: "Qual jogador possui mais Bolas de Ouro?",
         choiceA: "Pelé",
-
         choiceB: "Messi",
-
         choiceC: "Neymar",
-
         choiceD: "Ronaldo Fenômeno",
-
         choiceE: "Cristiano Ronaldo",
-
         correct: "B"
+    },
 
-    }, {
-
+    {
         question: "Qual time tem mais títulos da libertadores?",
-
         choiceA: "Santos",
-
         choiceB: "Boca Juniors",
-
         choiceC: "Cruzeiro",
-
         choiceD: "Independiente",
-
         choiceE: "River Plate",
-
         correct: "D"
+    },
 
-    }, {
-
-        question: "Que time tem mais títulos de Champions League?",
-
+    {
+        question: "Qual dos seguintes times tem mais títulos de Champions League?",
         choiceA: "Real Madrid",
-
         choiceB: "Barcelona",
-
         choiceC: "Juventus",
-
         choiceD: "Bayern de Munique",
-
-        choiceE: "Botafigo",
-
+        choiceE: "Botafogo",
         correct: "A"
+    },
 
-    }, {
-
-        question: "Qual time que ganhou a copa do mundo de 2018?",
-
+    {
+        question: "Qual seleção ganhou a Copa do Mundo de 2018?",
         choiceA: "Holanda",
-
         choiceB: "Alemanha",
-
         choiceC: "Bélgica",
-
         choiceD: "Croácia",
-
         choiceE: "França",
-
         correct: "E"
     }
-
 ]
+
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
@@ -105,10 +71,8 @@ const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
 
-
 function renderQuestion() {
     let q = questions[runningQuestion];
-
     question.innerHTML = "<p>" + q.question + "</p>";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
@@ -134,8 +98,6 @@ function renderProgress() {
     }
 }
 
-// counter render
-
 function renderCounter() {
     if (count <= questionTime) {
         counter.innerHTML = count;
@@ -154,17 +116,12 @@ function renderCounter() {
     }
 }
 
-// checkAnwer
-
 function checkAnswer(answer) {
     if (answer == questions[runningQuestion].correct) {
-        // answer is correct
         score++;
-        // change progress color to green
         answerIsCorrect();
     } else {
-        // answer is wrong
-        // change progress color to red
+
         answerIsWrong();
     }
     count = 0;
@@ -172,35 +129,29 @@ function checkAnswer(answer) {
         runningQuestion++;
         renderQuestion();
     } else {
-        // end the quiz and show the score
         clearInterval(TIMER);
         scoreRender();
     }
 }
 
-// answer is correct
 function answerIsCorrect() {
     document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
 }
 
-// answer is Wrong
 function answerIsWrong() {
     document.getElementById(runningQuestion).style.backgroundColor = "#f00";
 }
 
-// score render
 function scoreRender() {
     scoreDiv.style.display = "block";
-
-    // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score / questions.length);
 
-    // choose the image based on the scorePerCent
     let img = (scorePerCent >= 80) ? "img/5.png" :
         (scorePerCent >= 60) ? "img/4.png" :
         (scorePerCent >= 40) ? "img/3.png" :
         (scorePerCent >= 20) ? "img/2.png" :
         "img/1.png";
 
+    scoreDiv.innerHTML += "O Resultado  é";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
 }

@@ -384,6 +384,11 @@ body {
     color: #333;
 }
 
+#bola {
+    height: 40px;
+    position: absolute;
+}
+
 .question {
     font-weight: 600;
 }
@@ -405,17 +410,12 @@ body {
 }
 
 #submit:hover {
-    background-color: #3a8;
-}
-
-#bola {
-    height: 40px;
-    position: absolute;
+    background-color: cyan;
 }
 
 #container {
     margin: 20px auto;
-    background-color: white;
+    background-color: black;
     height: 300px;
     width: 700px;
     border-radius: 5px;
@@ -432,9 +432,12 @@ body {
     text-align: center;
     cursor: pointer;
     position: relative;
-    left: 300px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 15px;
+    left: 250px;
     top: 50px;
-    color: lightgrey;
+    color: green;
 }
 
 #start:hover {
@@ -448,6 +451,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+    color: green;
 }
 
 #question p {
@@ -461,7 +465,8 @@ body {
     position: absolute;
     right: 0;
     top: 125px;
-    padding: 10px
+    padding: 10px;
+    color: green;
 }
 
 .choice {
@@ -526,4 +531,8 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+}
+
+#timer {
+    color: white;
 }
