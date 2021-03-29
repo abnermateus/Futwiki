@@ -12,7 +12,7 @@ const progresso = document.getElementById("progresso");
 const scoreDiv = document.getElementById("pontuacao");
 
 let questoes = [{
-        questao: "Qual foi o time que mais ganhou títulos da copa do mundo?",
+        questao: "Qual foi a seleção que mais ganhou títulos da Copa do Mundo?",
         opcaoA: "Alemanha",
         opcaoB: "Espanha",
         opcaoC: "Inglaterra",
@@ -32,7 +32,7 @@ let questoes = [{
     },
 
     {
-        questao: "Qual time tem mais títulos da libertadores?",
+        questao: "Qual dos times abaixo tem mais títulos da Libertadores?",
         opcaoA: "Santos",
         opcaoB: "Boca Juniors",
         opcaoC: "Cruzeiro",
@@ -43,7 +43,7 @@ let questoes = [{
     },
 
     {
-        questao: "Que time tem mais títulos de Champions League?",
+        questao: "Qual dos times abaixo possui mais títulos de Champions League?",
         opcaoA: "Real Madrid",
         opcaoB: "Barcelona",
         opcaoC: "Juventus",
@@ -53,7 +53,7 @@ let questoes = [{
     },
 
     {
-        questao: "Qual time que ganhou a copa do mundo de 2018?",
+        questao: "Qual seleção ganhou a Copa do Mundo de 2018?",
         opcaoA: "Holanda",
         opcaoB: "Alemanha",
         opcaoC: "Bélgica",
