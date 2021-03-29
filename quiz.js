@@ -1,117 +1,206 @@
-let myQuestions = [{
-        question: "Qual a alternativa correta?",
-        answers: {
-            a: 'errada',
-            b: 'certa',
-            c: 'errada'
-        },
-        correctAnswer: 'b'
-    },
+const start = document.getElementById("start");
+const quiz = document.getElementById("quiz");
+const question = document.getElementById("question");
+const choiceA = document.getElementById("A");
+const choiceB = document.getElementById("B");
+const choiceC = document.getElementById("C");
+const choiceD = document.getElementById("D");
+const choiceE = document.getElementById("E");
+const counter = document.getElementById("counter");
+const timeGauge = document.getElementById("timeGauge");
+const progress = document.getElementById("progress");
+const scoreDiv = document.getElementById("scoreContainer");
+
+
+let questions = [
+
     {
-        question: "Qual é o maior numero?",
-        answers: {
-            a: '-30',
-            b: '5',
-            c: '10',
-            d: '9'
-        },
-        correctAnswer: 'c'
-    },
-    {
-        question: "Nada",
-        answers: {
-            a: 'musica',
-            b: 'filme',
-            c: 'da like',
-            d: 'não me julgue pela lingua ;-;'
-        },
-        correctAnswer: 'a'
+
+        question: "Qual foi o time que mais ganhou títulos da copa do mundo?",
+
+        choiceA: "Alemanha",
+
+        choiceB: "Espanha",
+
+        choiceC: "Inglaterra",
+
+        choiceD: "Brasil",
+
+        choiceE: "Argentina",
+
+        correct: "D"
+
+    }, {
+
+        question: "Qual jogador possui mais bolas de ouro?",
+
+        choiceA: "Pelé",
+
+        choiceB: "Messi",
+
+        choiceC: "Neymar",
+
+        choiceD: "Ronaldo Fenômeno",
+
+        choiceE: "Cristiano Ronaldo",
+
+        correct: "B"
+
+    }, {
+
+        question: "Qual time tem mais títulos da libertadores?",
+
+        choiceA: "Santos",
+
+        choiceB: "Boca Juniors",
+
+        choiceC: "Cruzeiro",
+
+        choiceD: "Independiente",
+
+        choiceE: "River Plate",
+
+        correct: "D"
+
+    }, {
+
+        question: "Que time tem mais títulos de Champions League?",
+
+        choiceA: "Real Madrid",
+
+        choiceB: "Barcelona",
+
+        choiceC: "Juventus",
+
+        choiceD: "Bayern de Munique",
+
+        choiceE: "Botafigo",
+
+        correct: "A"
+
+    }, {
+
+        question: "Qual time que ganhou a copa do mundo de 2018?",
+
+        choiceA: "Holanda",
+
+        choiceB: "Alemanha",
+
+        choiceC: "Bélgica",
+
+        choiceD: "Croácia",
+
+        choiceE: "França",
+
+        correct: "E"
     }
-];
 
-let quizContainer = document.getElementById('quiz');
-let resultsContainer = document.getElementById('results');
-let submitButton = document.getElementById('submit');
+]
+const lastQuestion = questions.length - 1;
+let runningQuestion = 0;
+let count = 0;
+const questionTime = 10;
+const gaugeWidth = 150;
+const gaugeUnit = gaugeWidth / questionTime;
+let TIMER;
+let score = 0;
 
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
+function renderQuestion() {
+    let q = questions[runningQuestion];
 
-    function showQuestions(questions, quizContainer) {
-        // precisaremos de um lugar para armazenar a saída e as opções de resposta
-        let output = [];
-        let answers; // poderia ter dado outro nome, alem do mais, eu mesmo me confundi :/
+    question.innerHTML = "<p>" + q.question + "</p>";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
+    choiceE.innerHTML = q.choiceE;
+}
 
-        // para cada questão
-        for (let i = 0; i < questions.length; i++) {
+start.addEventListener("click", startQuiz);
 
-            // mas, primeiro resetamos a lista de questões
-            answers = [];
+function startQuiz() {
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    renderProgress();
+    renderCounter();
+    TIMER = setInterval(renderCounter, 1000);
+}
 
-            // e aqui faremos para cada resposta na questão.
-            for (letter in questions[i].answers) {
+function renderProgress() {
+    for (let qIndex = 0; qIndex <= lastQuestion; qIndex++) {
+        progress.innerHTML += "<div class='prog' id=" + qIndex + "></div>";
+    }
+}
 
-                // Aqui será escrito para html para usar o Radio.
-                answers.push(
-                    '<label>' +
-                    '<input type="radio" name="question' + i + '" value="' + letter + '">'
-                    //	+ letter + ') ' vou deixar a letra comentada, porque achei melhor assim
-                    +
-                    questions[i].answers[letter] +
-                    '</label>'
-                );
-            }
+// counter render
 
-            // add this question and its answers to the output
-            output.push(
-                '<div class="question">' + questions[i].question + '</div>' +
-                '<div class="answers">' + answers.join('') + '</div>'
-            );
+function renderCounter() {
+    if (count <= questionTime) {
+        counter.innerHTML = count;
+        timeGauge.style.width = count * gaugeUnit + "px";
+        count++
+    } else {
+        count = 0;
+        answerIsWrong();
+        if (runningQuestion < lastQuestion) {
+            runningQuestion++;
+            renderQuestion();
+        } else {
+            clearInterval(TIMER);
+            scoreRender();
         }
-
-        // finally combine our output list into one string of html and put it on the page
-        quizContainer.innerHTML = output.join('');
     }
+}
 
+// checkAnwer
 
-    function showResults(questions, quizContainer, resultsContainer) {
-
-
-        let answerContainers = quizContainer.querySelectorAll('.answers');
-
-
-        let userAnswer = '';
-        let numCorrect = 0;
-
-
-        for (let i = 0; i < questions.length; i++) {
-
-            // agora ele vai virar a letra que esta marcada.
-            userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
-
-
-
-            if (userAnswer === questions[i].correctAnswer) {
-
-                numCorrect++;
-
-
-                answerContainers[i].style.color = 'lightgreen';
-            } else {
-
-                answerContainers[i].style.color = 'red';
-            }
-        }
-
-
-        resultsContainer.innerHTML = numCorrect + ' de ' + questions.length;
+function checkAnswer(answer) {
+    if (answer == questions[runningQuestion].correct) {
+        // answer is correct
+        score++;
+        // change progress color to green
+        answerIsCorrect();
+    } else {
+        // answer is wrong
+        // change progress color to red
+        answerIsWrong();
     }
-
-    // show questions right away
-    showQuestions(questions, quizContainer);
-
-    // on submit, show results
-    submitButton.onclick = function() {
-        showResults(questions, quizContainer, resultsContainer);
+    count = 0;
+    if (runningQuestion < lastQuestion) {
+        runningQuestion++;
+        renderQuestion();
+    } else {
+        // end the quiz and show the score
+        clearInterval(TIMER);
+        scoreRender();
     }
+}
+
+// answer is correct
+function answerIsCorrect() {
+    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+}
+
+// answer is Wrong
+function answerIsWrong() {
+    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+}
+
+// score render
+function scoreRender() {
+    scoreDiv.style.display = "block";
+
+    // calculate the amount of question percent answered by the user
+    const scorePerCent = Math.round(100 * score / questions.length);
+
+    // choose the image based on the scorePerCent
+    let img = (scorePerCent >= 80) ? "img/5.png" :
+        (scorePerCent >= 60) ? "img/4.png" :
+        (scorePerCent >= 40) ? "img/3.png" :
+        (scorePerCent >= 20) ? "img/2.png" :
+        "img/1.png";
+
+    scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
 }

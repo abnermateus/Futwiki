@@ -12,7 +12,6 @@
 
 <body>
     <header id="cabecalho">
-        <img src="Images/icon.ico" alt="bola" id="bola">
         <h1> <strong>Futwiki</strong> </h1>
         <h2> <strong>Seu guia prático sobre futebol</strong> </h2>
         <nav>
@@ -27,6 +26,27 @@
         </nav>
     </header>
 
+    <div id="container">
+        <div id="start">Começar Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+                <div class="choice" id="E" onclick="checkAnswer('E')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+
     <footer>
         <p class="texto-rodape">Futwiki</p>
         <p class="texto-rodape">Seu guia prático sobre futebol</p>
@@ -34,6 +54,5 @@
 </body>
 
 <script src="quiz.js"></script>
-<script src="bolas.js"></script>
 
 </html>
