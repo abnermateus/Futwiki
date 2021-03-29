@@ -403,6 +403,7 @@ body {
 #comecar {
     font-size: 1.5em;
     font-weight: bolder;
+    font-family: 'Kaushan Script', cursive;
     width: 100px;
     height: 150px;
     display: inline;
@@ -480,7 +481,7 @@ body {
 }
 
 #pontuacao {
-    margin: -35px auto;
+    margin: -299px auto;
     background-color: white;
     opacity: 0.8;
     height: 300px;
@@ -506,4 +507,14 @@ body {
 #timer {
     color: goldenrod;
     font-size: 30px;
+    padding-top: 265px;
+    padding-left: 5px;
+}
+
+#tempo-resposta {
+    text-align: center;
+    padding-top: 35px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    color: black;
 }

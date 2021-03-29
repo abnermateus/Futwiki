@@ -148,12 +148,5 @@ function Pontuacao() {
     scoreDiv.style.display = "block";
 
     const porcentagem = Math.round(100 * pontos / questoes.length);
-
-    let img = (porcentagem >= 80) ? "img/5.png" :
-        (porcentagem >= 60) ? "img/4.png" :
-        (porcentagem >= 40) ? "img/3.png" :
-        (porcentagem >= 20) ? "img/2.png" :
-        "img/1.png";
-
     scoreDiv.innerHTML += "<p>" + porcentagem + "%</p>";
 }
